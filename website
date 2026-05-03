@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarex Property Services | Boston's Premier Cleaning 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+
+        :root {
+            --primary-blue: #3b82f6;
+            --glass: rgba(255, 255, 255, 0.75);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8faff;
+            overflow-x: hidden;
+            color: #1e293b;
+        }
+
+        .gabrun-gradient {
+            background: radial-gradient(circle at 50% -20%, #3b82f622 0%, #f8faff 60%);
+        }
+
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.02);
+            border-radius: 28px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(2deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        .btn-black {
+            background: #000;
+            color: #fff;
+            padding: 16px 36px;
+            border-radius: 999px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn-black:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #000;
+            border: 2px solid #e2e8f0;
+            padding: 16px 36px;
+            border-radius: 999px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background: #fff;
+            border-color: #3b82f6;
+            color: #3b82f6;
+        }
+
+        .tilt-card {
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+        }
+
+        .animate-scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll 45s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .logo-box {
+            width: 48px;
+            height: 48px;
+            background: #000;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="gabrun-gradient">
+
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center px-6 md:px-20 py-6 sticky top-0 z-50 backdrop-blur-lg border-b border-white/20">
+        <div class="flex items-center gap-3">
+            <div class="logo-box">
+                <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xl font-extrabold tracking-tighter text-slate-900">CLAREX</span>
+        </div>
+        <div class="hidden lg:flex gap-10 font-bold text-slate-600">
+            <a href="#services" class="hover:text-blue-600 transition">Services</a>
+            <a href="#reviews" class="hover:text-blue-600 transition">Reviews</a>
+            <a href="tel:8572514448" class="hover:text-blue-600 transition">857-251-4448</a>
+        </div>
+        <button class="bg-black text-white px-7 py-2.5 rounded-full font-bold text-sm hover:opacity-80 transition">Menu</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 pb-24 px-6 overflow-hidden">
+        <div class="max-w-6xl mx-auto text-center relative">
+            
+            <!-- 3D Floating Graphical Clipart -->
+            <div class="absolute -left-10 top-0 floating-element opacity-20 lg:opacity-100 hidden md:block">
+                <img src="https://cdn-icons-png.flaticon.com/512/3144/3144863.png" width="130" alt="Cleaner Graphic">
+            </div>
+            <div class="absolute -right-10 bottom-0 floating-element opacity-20 lg:opacity-100 hidden md:block" style="animation-delay: 2.5s;">
+                <img src="https://cdn-icons-png.flaticon.com/512/911/911816.png" width="110" alt="Vacuum Graphic">
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <span class="bg-blue-50 text-blue-600 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest border border-blue-100">Greater Boston Region</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold mt-8 mb-6 text-slate-900 leading-[1.1] tracking-tight">
+                    Make Your Space <br> <span class="text-blue-600">Pure and Spotless</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
+                    Premium, insured cleaning solutions for homes, offices, and rentals. We bring the sparkle back to your property with professional care.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="tel:8572514448" class="btn-black">Book a Cleaning</a>
+                    <a href="#services" class="btn-outline">View Services</a>
+                </div>
+            </div>
+
+            <!-- Trust Bar (Interactive Cards) -->
+            <div class="mt-24 grid md:grid-cols-3 gap-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="glass-card p-8 tilt-card border-l-4 border-l-blue-500 text-left">
+                    <p class="text-xs font-bold text-blue-500 mb-3 uppercase tracking-widest">Insurance</p>
+                    <h4 class="text-lg font-bold leading-snug text-slate-800">Fully insured with over a million dollars in general liability insurance.</h4>
+                    <div class="mt-4 flex items-center gap-2 text-slate-400 text-sm font-semibold">
+                        <i data-lucide="shield-check" class="w-4 text-green-500"></i> Verified Protection
+                    </div>
+                </div>
+                <div class="glass-card p-8 tilt-card bg-blue-600 text-white text-left">
+                    <p class="text-xs font-bold text-blue-200 mb-3 uppercase tracking-widest">Our Team</p>
+                    <h4 class="text-2xl font-extrabold leading-tight">Professional Vetted Experts</h4>
+                    <p class="mt-4 text-blue-100 text-sm font-medium">Background checked and highly trained for your peace of mind.</p>
+                </div>
+                <div class="glass-card p-8 tilt-card text-left">
+                    <p class="text-xs font-bold text-blue-500 mb-3 uppercase tracking-widest">Coverage</p>
+                    <div class="flex items-center gap-4 mt-2">
+                        <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center">
+                            <i data-lucide="map-pin" class="text-blue-600"></i>
+                        </div>
+                        <span class="font-bold text-slate-800 text-lg">Greater Boston Area</span>
+                    </div>
+                    <p class="mt-4 text-slate-400 text-sm font-medium">Serving downtown and surrounding suburbs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid (All 6 Primary Services) -->
+    <section class="py-24 bg-white/40" id="services">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Our Professional Services</h2>
+                <p class="text-slate-500 font-medium">Click a service to learn more or book instantly.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Standard Clean -->
+                <div class="glass-card p-8 tilt-card group hover:bg-blue-600 hover:text-white transition-all duration-500" data-aos="fade-up">
+                    <i data-lucide="home" class="w-10 h-10 mb-6 text-blue-500 group-hover:text-white transition"></i>
+                    <h3 class="text-xl font-extrabold mb-3">Standard Clean</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">Routine maintenance to keep your home tidy, healthy, and inviting every week.</p>
+                </div>
+
+                <!-- Deep Clean -->
+                <div class="glass-card p-8 tilt-card group hover:bg-blue-600 hover:text-white transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <i data-lucide="sparkles" class="w-10 h-10 mb-6 text-blue-500 group-hover:text-white transition"></i>
+                    <h3 class="text-xl font-extrabold mb-3">Deep Clean</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">A detailed, top-to-bottom scrub targeting high-touch areas and hidden dust buildup.</p>
+                </div>
+
+                <!-- Move-In/Move-Out -->
+                <div class="glass-card p-8 tilt-card group hover:bg-blue-600 hover:text-white transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <i data-lucide="truck" class="w-10 h-10 mb-6 text-blue-500 group-hover:text-white transition"></i>
+                    <h3 class="text-xl font-extrabold mb-3">Move-In/Move-Out</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">The ultimate refresh for your new beginning or securing your full rental deposit.</p>
+                </div>
+
+                <!-- Commercial/Office -->
+                <div class="glass-card p-8 tilt-card group hover:bg-blue-600 hover:text-white transition-all duration-500" data-aos="fade-up">
+                    <i data-lucide="building-2" class="w-10 h-10 mb-6 text-blue-500 group-hover:text-white transition"></i>
+                    <h3 class="text-xl font-extrabold mb-3">Commercial & Office</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">Professional workspace cleaning tailored to your business schedule and hygiene needs.</p>
+                </div>
+
+                <!-- Apartment Turnover -->
+                <div class="glass-card p-8 tilt-card group hover:bg-blue-600 hover:text-white transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <i data-lucide="door-open" class="w-10 h-10 mb-6 text-blue-500 group-hover:text-white transition"></i>
+                    <h3 class="text-xl font-extrabold mb-3">Apartment Turnover</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">Rapid, high-quality turnarounds designed for landlords and property managers.</p>
+                </div>
+
+                <!-- Airbnb -->
+                <div class="glass-card p-8 tilt-card group hover:bg-blue-600 hover:text-white transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <i data-lucide="hotel" class="w-10 h-10 mb-6 text-blue-500 group-hover:text-white transition"></i>
+                    <h3 class="text-xl font-extrabold mb-3">Airbnb Turnover</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">Hotel-standard cleaning and staging to ensure your perfect guest reviews every time.</p>
+                </div>
+            </div>
+
+            <!-- Extra Services Section -->
+            <div class="mt-20 glass-card p-12 text-center shadow-2xl shadow-blue-100/40">
+                <h4 class="text-xs font-bold text-blue-600 uppercase tracking-[0.2em] mb-10">Add-On Specializations</h4>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="flex flex-col items-center gap-4">
+                        <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center text-2xl shadow-sm">❄️</div>
+                        <span class="font-extrabold text-slate-700">Inside Fridge</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-4">
+                        <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center text-2xl shadow-sm">📁</div>
+                        <span class="font-extrabold text-slate-700">Cabinet Clean</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-4">
+                        <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center text-2xl shadow-sm">🪟</div>
+                        <span class="font-extrabold text-slate-700">Interior Windows</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-4">
+                        <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center text-2xl shadow-sm">🧺</div>
+                        <span class="font-extrabold text-slate-700">Laundry Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section (Slider) -->
+    <section class="py-24 overflow-hidden" id="reviews">
+        <div class="max-w-6xl mx-auto px-6 mb-12">
+            <h2 class="text-4xl font-extrabold text-slate-900 tracking-tight">Real Results, <span class="text-blue-600">Real People</span></h2>
+            <p class="text-slate-500 mt-2 font-medium">Trusted by families and businesses throughout Boston.</p>
+        </div>
+        <div class="flex gap-6 animate-scroll px-6">
+            <!-- Review 1 -->
+            <div class="glass-card p-10 min-w-[380px]">
+                <div class="flex gap-1 text-yellow-400 mb-6"><i data-lucide="star" class="w-4 fill-current"></i><i data-lucide="star" class="w-4 fill-current"></i><i data-lucide="star" class="w-4 fill-current"></i><i data-lucide="star" class="w-4 fill-current"></i><i data-lucide="star" class="w-4 fill-current"></i></div>
+                <p class="text-slate-600 font-medium italic text-lg leading-relaxed">"The best cleaning service in Boston. Punctual, professional, and they truly exceed my expectations every visit."</p>
+                <div class="mt-8">
+                    <p class="font-extrabold text-slate-900">Sarah Jenkins</p>
+                    <p class="text-xs text-slate-400 font-bold uppercase tracking-widest">South End</p>
+                </div>
+            </div>
+            <!-- Review 2 -->
+            <div class="glass-card p-10 min-w-[380px]">
+                <div class="flex gap-1 text-yellow-400 mb-6"><i data-lucide="star" class="w-4 fill-current"></i><i data-lucide="star" class="w-4 fill-current"></i><i data-lucide="star" class="w-4 fill-current"></i><i data-lucide="star" class="w-4 fill-current"></i><i data-lucide="star" class="w-4 fill-current"></i></div>
+                <p class="text-slate-600 font-medium italic text-lg leading-relaxed">"Incredible attention to detail. My Airbnb guests always leave 5-star reviews about how spotless the place is."</p>
+                <div class="mt-8">
+                    <p class="font-extrabold text-slate-900">David Moretti</p>
+                    <p class="text-xs text-slate-400 font-bold uppercase tracking-widest">Cambridge</p>
+                </div>
+            </div>
+            <!-- Review 3 -->
+            <div class="glass-card p-10 min-w-[380px]">
+                <div class="flex gap-1 text-yellow-400 mb-6"><i data-lucide="star" class="w-4 fill-current"></i><i data-lucide="star" class="w-4 fill-current"></i><i data-lucide="star" class="w-4 fill-current"></i><i data-lucide="star" class="w-4 fill-current"></i><i data-lucide="star" class="w-4 fill-current"></i></div>
+                <p class="text-slate-600 font-medium italic text-lg leading-relaxed">"Fast, reliable, and insured. It's the only company I trust with my property turnovers. Five stars!"</p>
+                <div class="mt-8">
+                    <p class="font-extrabold text-slate-900">Elena Rodriguez</p>
+                    <p class="text-xs text-slate-400 font-bold uppercase tracking-widest">Brookline</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 px-6">
+        <div class="max-w-5xl mx-auto bg-blue-600 rounded-[56px] p-16 text-center text-white relative overflow-hidden shadow-3xl shadow-blue-300" data-aos="zoom-in">
+            <h2 class="text-5xl font-extrabold mb-6 relative z-10">Start Fresh with Clarex</h2>
+            <p class="text-blue-100 text-lg mb-12 relative z-10 max-w-xl mx-auto">Join hundreds of Boston families who trust us for a spotless space. Reach out for a quick quote.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-10 relative z-10">
+                <a href="mailto:clarexservices@gmail.com" class="font-bold flex items-center gap-3 text-xl hover:text-white/80 transition"><i data-lucide="mail"></i> clarexservices@gmail.com</a>
+                <a href="tel:8572514448" class="bg-white text-black px-12 py-5 rounded-full font-extrabold shadow-xl text-xl hover:scale-105 transition">857-251-4448</a>
+            </div>
+            <!-- Decorative Accents -->
+            <div class="absolute -top-10 -right-10 w-72 h-72 bg-blue-400/30 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 border-t border-slate-100 mt-20 px-10">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="logo-box">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <p class="font-extrabold text-2xl text-slate-900">CLAREX</p>
+                </div>
+                <p class="text-slate-400 max-w-sm leading-relaxed font-medium">Premium property services for the Greater Boston Area. Making excellence standard in every home and office we visit.</p>
+            </div>
+            
+            <div class="flex gap-24">
+                <div>
+                    <p class="font-extrabold text-slate-900 mb-6">Home</p>
+                    <ul class="text-slate-500 space-y-4 font-bold text-sm">
+                        <li><a href="#" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="#services" class="hover:text-blue-600 transition">Benefits</a></li>
+                        <li><a href="mailto:clarexservices@gmail.com" class="hover:text-blue-600 transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-extrabold text-slate-900 mb-6">Company</p>
+                    <ul class="text-slate-500 space-y-4 font-bold text-sm">
+                        <li>Career</li>
+                        <li>Blog</li>
+                        <li>Support Center</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-20 pt-10 border-t border-slate-50 flex flex-col sm:flex-row justify-between items-center text-sm font-bold text-slate-300 gap-4">
+            <span>CLAREX PROPERTY SERVICES</span>
+            <span>© 2026 ALL RIGHTS RESERVED</span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init({ once: true, duration: 800 });
+        
+        VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
+            max: 10,
+            speed: 500,
+            glare: true,
+            "max-glare": 0.1,
+            scale: 1.02
+        });
+    </script>
+</body>
+</html>
